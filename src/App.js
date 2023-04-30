@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import CompanyDetails from "./CompanyDetails";
@@ -9,6 +9,7 @@ function App() {
   const [esgData, setEsgData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const resultsRef = useRef(null);
 
   const fetchEsgData = async () => {
     setLoading(true);
@@ -41,13 +42,18 @@ function App() {
     fetchEsgData();
   };
 
+  useEffect(() => {
+    if (esgData && resultsRef.current) {
+      resultsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [esgData]);
+
   return (
     <div className="App">
       <div class="new-div">
         <div class="image-container">
           <img src="/mountains-sky.jpeg" alt="main-bg" class="appbg" />
           <h1 class="image-text">Invest Green.</h1>
-          <h4 class="small-text">t</h4>
         </div>
     </div>
     <div class="bottom"> 
@@ -68,7 +74,7 @@ function App() {
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       {esgData && (
-        <div>
+        <div ref={resultsRef}>
           <h2>ESG Ratings:</h2>
           <ul>
             {esgData.map((company) => (
