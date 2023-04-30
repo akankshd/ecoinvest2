@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #C1ECBE;
+}
+
+.App {
+  width: 100%;
+  max-width: 6000px;
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: #000000; /* Change this to the color you want */
+}
+
+button {
+  display: inline-block;
+  background-color: #087f23; /* Change this to the color you want */
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.my-button {
+  background-color: #026b20;
+}
+
+.submit {
+  background-color: red;
+}
+
+.image-container {
+  position: sticky;
+}
+
+.appbg {
+  width: 100vw;
+  height: calc(100vh - 50px); /* minus the header height */
+  object-fit: cover;
+}
+button:hover {
+  background-color: #056c19; /* Change this to the color you want */
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App input[type="text"] {
+    color: #054a09; /* Black */
+  }
+  
+  .App input[type="text"]::placeholder {
+    color: #000000; /* Black */
+  }  
+
+  .image-container {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .appbg {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+      object-position: top;
+  }
+
+  .image-text {
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 9px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bottom {
+    background-color: #C1ECBE;
+  }
+  
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+.App a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.go-green {
+  font-size: 30px;
+  margin: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
