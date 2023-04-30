@@ -46,7 +46,7 @@ function App() {
       <div class="new-div">
         <div class="image-container">
           <img src="/mountains-sky.jpeg" alt="main-bg" class="appbg" />
-          <h1 class="image-text">invest green.</h1>
+          <h1 class="image-text">Invest Green.</h1>
           <h4 class="small-text">t</h4>
         </div>
     </div>
@@ -60,7 +60,7 @@ function App() {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="enter company names or stock symbols, separated by commas"
+          placeholder="Enter company names or stock symbols, separated by commas"
         />
         <button type="submit" class="my-button">click</button>
       </form>

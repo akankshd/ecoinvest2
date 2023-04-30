@@ -28,7 +28,7 @@ input[type="text"] {
   box-sizing: border-box;
   margin-bottom: 10px;
   border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
+  border-radius: 10px;
   color: #000000; /* Change this to the color you want */
 }
 
@@ -56,7 +56,7 @@ button {
 }
 
 .image-container {
-  position: sticky;
+  position: relative;
 }
 
 .appbg {
@@ -65,7 +65,7 @@ button {
   object-fit: cover;
 }
 button:hover {
-  background-color: #056c19; /* Change this to the color you want */
+  background-color: #B2AC88; /* Change this to the color you want */
   box-shadow: 0 7px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -100,6 +100,48 @@ button:hover {
     font-size: 40px;
     text-align: center;
     text-shadow: 2px 9px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  form {
+    position: absolute;
+    top: 55%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(16, 96, 125);
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 13px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36.9%;
+    height: auto;
+  }
+  
+  
+  button[type="submit"] {
+    background-color: #026b20;
+    color: #ffffff; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 0px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1ad03e;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  form label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
   }
   
   .bottom {

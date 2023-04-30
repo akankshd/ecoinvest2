@@ -1,61 +1,60 @@
 .dropdown-menu {
-    color: #333;
-    background-color: #fff;
-    border-radius: 5px;
-  }
-  
-  
-  .company-details {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgb(255, 255, 255);
-    margin: 20px;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
+  color: #333;
+  background-color: #fff;
+  border-radius: 5px;
+}
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 5px;
-    height: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  h3 {
-    background-color: rgb(255, 255, 255);
-    font-size: 30px;
-    margin: 0;
-  }
-  
- 
-  
+
+.company-details {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+  margin: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  height: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+h3 {
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin: 0;
+}
+
+
+
 header img {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
